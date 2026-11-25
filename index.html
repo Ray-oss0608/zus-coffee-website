@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page settings -->
+  <meta charset="UTF-8">
+  <!-- Makes the page fit the phone screen width (needed for responsive layout) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZUS Coffee | Crafted Coffee for Every Day</title>
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Poppins (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER + NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">ZUS <span>COFFEE</span></a>
+
+      <!-- Internal navigation: each link jumps to a section id on this page -->
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HOME (HERO) ===================== -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Malaysian Specialty Coffee · Since 2019</p>
+        <h1>Crafted Coffee,<br>Made for Every Day</h1>
+        <p class="hero-text">
+          Great coffee should not be a luxury saved for weekends. At ZUS Coffee we pour
+          rich, balanced cups at an honest price, so your morning lecture or late-night
+          deadline always starts with something good.
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-gold">Explore the Menu</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HIGHLIGHTS (ICONS) ===================== -->
+    <section class="highlights">
+      <div class="container highlight-grid">
+        <div class="highlight">
+          <img src="images/icons/bean.svg" alt="Coffee bean icon">
+          <h3>Quality Beans</h3>
+          <p>Carefully selected beans roasted for a smooth, full-bodied taste.</p>
+        </div>
+        <div class="highlight">
+          <img src="images/icons/cup.svg" alt="Coffee cup icon">
+          <h3>Freshly Brewed</h3>
+          <p>Every drink is prepared to order by our trained baristas.</p>
+        </div>
+        <div class="highlight">
+          <img src="images/icons/app.svg" alt="Mobile app icon">
+          <h3>Order Ahead</h3>
+          <p>Skip the queue: order in the app and pick up when you arrive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <img src="images/about.jpg" alt="A cup of ZUS latte with rising steam" class="about-img">
+
+        <div class="about-text">
+          <p class="eyebrow">About Us</p>
+          <h2>A Homegrown Brand with a Simple Promise</h2>
+          <div class="divider"></div>
+          <p>
+            ZUS Coffee started in Malaysia in 2019 with one idea: everyone deserves a
+            really good cup of coffee, every single day. Instead of making premium coffee
+            feel exclusive, we focus on consistent quality, friendly service and fair prices.
+          </p>
+          <p>
+            Today our deep blue cups are a familiar sight on campuses, in offices and on
+            busy city streets. Whether you need a quick takeaway between classes or a quiet
+            corner to study, ZUS is designed around the way young Malaysians live.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VIDEO ===================== -->
+    <section class="section video-section">
+      <div class="container narrow">
+        <p class="eyebrow">Watch</p>
+        <h2>From Bean to Cup</h2>
+        <div class="divider center"></div>
+        <!-- Embedded video: controls let the user play/pause; poster shows before playing -->
+        <video class="video" controls poster="images/video-poster.jpg">
+          <source src="video/zus-story.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCTS / SERVICES ===================== -->
+    <section id="products" class="section products">
+      <div class="container">
+        <p class="eyebrow center-text">Our Menu</p>
+        <h2 class="center-text">Signature Drinks</h2>
+        <div class="divider center"></div>
+
+        <!-- Product cards -->
+        <div class="product-grid">
+          <article class="card">
+            <img src="images/latte.jpg" alt="Spanish Latte in a glass">
+            <div class="card-body">
+              <span class="tag">Hot / Iced</span>
+              <h3>Spanish Latte</h3>
+              <p>Bold espresso with milk and a gentle sweetness. Our most-loved everyday cup.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/iced.jpg" alt="Iced CEO Latte with ice cubes">
+            <div class="card-body">
+              <span class="tag">Bestseller</span>
+              <h3>CEO Latte</h3>
+              <p>A stronger, richer latte for long days and busy schedules. Best served iced.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/matcha.jpg" alt="Iced Matcha Latte in a glass">
+            <div class="card-body">
+              <span class="tag">Non-Coffee</span>
+              <h3>Iced Matcha Latte</h3>
+              <p>Smooth green tea and fresh milk over ice: a calm, refreshing alternative.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Services -->
+        <h3 class="services-title center-text">How You Can Enjoy ZUS</h3>
+        <div class="service-grid">
+          <div class="service">
+            <img src="images/icons/dinein.svg" alt="Store icon">
+            <h4>Dine-In</h4>
+            <p>Relax in our cosy outlets with free Wi-Fi.</p>
+          </div>
+          <div class="service">
+            <img src="images/icons/takeaway.svg" alt="Takeaway bag icon">
+            <h4>Takeaway</h4>
+            <p>Order ahead in the app and pick up in minutes.</p>
+          </div>
+          <div class="service">
+            <img src="images/icons/delivery.svg" alt="Delivery truck icon">
+            <h4>Delivery</h4>
+            <p>Get your favourite drinks delivered to your door.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+
+        <!-- Contact details -->
+        <div class="contact-info">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's Talk Coffee</h2>
+          <div class="divider"></div>
+          <p>Questions, feedback or event orders? Send us a message and our team will get back to you.</p>
+
+          <ul class="info-list">
+            <li><img src="images/icons/pin.svg" alt="Location icon"> Cyberjaya, Selangor, Malaysia</li>
+            <li><img src="images/icons/clock.svg" alt="Clock icon"> Daily, 8:00 AM – 10:00 PM</li>
+            <li><img src="images/icons/mail.svg" alt="Email icon"> hello@zuscoffee-demo.com</li>
+          </ul>
+        </div>
+
+        <!-- Contact form (display only: it does not send data) -->
+        <form class="contact-form" action="#contact">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Aina Rahman" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="topic">Enquiry Type</label>
+          <select id="topic" name="topic">
+            <option>General Question</option>
+            <option>Feedback</option>
+            <option>Event / Bulk Order</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <a href="#home" class="logo">ZUS <span>COFFEE</span></a>
+      <p>© 2026 ICT2215 Student Project. Created for educational purposes only and not affiliated with ZUS Coffee.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
